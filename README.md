@@ -9,14 +9,14 @@ All the images are publicly available on [Docker Hub](https://cloud.docker.com/u
 ### Windows
 
 #### SBCL
-  * love5an/2.2-sbcl-1.5.4-nanoserver-1903
+  * love5an/dotnet-core-sdk-common-lisp:2.2-sbcl-1.5.4-nanoserver-1903
 
 ### Linux
 
 #### SBCL
-  * love5an/2.2-sbcl-1.5.3-stretch
-  * love5an/2.2-sbcl-1.5.4-stretch
+  * love5an/dotnet-core-sdk-common-lisp:2.2-sbcl-1.5.3-stretch
+  * love5an/dotnet-core-sdk-common-lisp:2.2-sbcl-1.5.4-stretch
 
 #### CCL
-  * love5an/2.2-ccl-1.11.5-stretch
+  * love5an/dotnet-core-sdk-common-lisp:2.2-ccl-1.11.5-stretch
 
