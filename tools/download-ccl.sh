@@ -3,6 +3,7 @@ set -exo pipefail
 
 version=$1
 suffix=$2
+executable=$3
 
 wget -O ccl.tar.gz https://github.com/Clozure/ccl/releases/download/v${version}/ccl-${version}-${suffix}.tar.gz
 
@@ -21,4 +22,4 @@ rm -f asdf.*
 
 wget https://common-lisp.net/project/asdf/archives/asdf.lisp
 
-echo '(compile-file "asdf")' | /opt/ccl/lx86cl64
+echo '(compile-file "asdf")' | /opt/ccl/$executable

@@ -2,7 +2,6 @@
 set -exo pipefail
 
 version=$1
-config_suffix=$2
 
 git clone git://git.code.sf.net/p/sbcl/sbcl sbcl
 
@@ -10,12 +9,10 @@ cd sbcl
 
 git checkout $version
 
-if [ -n $config_suffix ]; then
-  echo '(lambda (features) (cons :sb-core-compression features))' > \
-      customize-target-features.lisp
+rm -f /usr/lib/`uname -m`-linux-gnu/libz.so
 
-  sed -i.bak 's/OS_LIBS += -lz/OS_LIBS += -Wl,-Bstatic -lz -Wl,-Bdynamic/g' src/runtime/Config.${config_suffix}
-fi
+echo '(lambda (features) (cons :sb-core-compression features))' > \
+    customize-target-features.lisp
 bash make.sh
 
 export INSTALL_ROOT=/opt/sbcl

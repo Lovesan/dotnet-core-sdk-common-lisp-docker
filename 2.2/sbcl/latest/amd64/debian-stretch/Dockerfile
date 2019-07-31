@@ -13,7 +13,7 @@ RUN apt-get -y update && \
     apt-get -y autoremove && \
     apt-get -y autoclean && \
     chmod 755 ./tools/*.sh && \
-    bash ./tools/build-sbcl.sh "master" "x86-64-linux"
+    bash ./tools/build-sbcl.sh "master"
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS production
 

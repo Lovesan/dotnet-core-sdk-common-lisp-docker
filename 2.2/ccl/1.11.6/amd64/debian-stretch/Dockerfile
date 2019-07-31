@@ -9,24 +9,24 @@ RUN apt-get -y update && \
     apt-get -y dist-upgrade && \
     apt-get -y install bash wget gzip \
                        git m4 libz-dev autoconf autopoint libtool \
-                       sbcl texinfo && \
+                       texinfo && \
     apt-get -y autoremove && \
     apt-get -y autoclean && \
     chmod 755 ./tools/*.sh && \
-    bash ./tools/build-sbcl.sh "sbcl-1.5.4"
+    bash ./tools/build-ccl.sh "1.11.6" linuxx86 linuxx8664 lx86cl64
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS production
 
 WORKDIR /root
 
-COPY --from=build /opt/sbcl /opt/sbcl/
+COPY --from=build /opt/ccl /opt/ccl/
 
 COPY --from=build /build/quicklisp.lisp /root
 
 COPY --from=build /build/install.lisp /root
 
-ENV PATH="/opt/sbcl/bin:${PATH}"
+ENV PATH="/opt/ccl:${PATH}"
 
-ENV SBCL_HOME="/opt/sbcl/lib/sbcl"
+ENV CCL_DEFAULT_DIRECTORY=/opt/ccl
 
-RUN cat install.lisp | sbcl && rm quicklisp.lisp install.lisp
+RUN cat install.lisp | ccl64 && rm quicklisp.lisp install.lisp
