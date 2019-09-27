@@ -21,9 +21,11 @@ All the images are publicly available on [Docker Hub](https://cloud.docker.com/u
   * love5an/dotnet-core-sdk-common-lisp:2.2-sbcl-1.5.5-stretch
   * love5an/dotnet-core-sdk-common-lisp:2.2-sbcl-1.5.6-stretch
   * love5an/dotnet-core-sdk-common-lisp:2.2-sbcl-latest-stretch
+  * love5an/dotnet-core-sdk-common-lisp:3.0-sbcl-latest-bionic
 
 #### CCL
   * love5an/dotnet-core-sdk-common-lisp:2.2-ccl-1.11.5-stretch
   * love5an/dotnet-core-sdk-common-lisp:2.2-ccl-1.11.6-stretch
   * love5an/dotnet-core-sdk-common-lisp:2.2-ccl-latest-stretch
+  * love5an/dotnet-core-sdk-common-lisp:3.0-ccl-latest-bionic
 
