@@ -15,7 +15,7 @@ RUN apt-get -y update && \
     update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 800 \
                         --slave /usr/bin/g++ g++ /usr/bin/g++-8 && \
     chmod 755 ./tools/*.sh && \
-    bash ./tools/build-ccl.sh "master" linuxx86 linuxx8664 lx86cl64
+    bash ./tools/build-ccl.sh "1.11.6" linuxx86 linuxx8664 lx86cl64
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.0-bionic AS production
 
