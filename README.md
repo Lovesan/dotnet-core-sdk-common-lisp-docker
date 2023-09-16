@@ -18,7 +18,10 @@ All the images are publicly available on [Docker Hub](https://cloud.docker.com/u
   * love5an/dotnet-core-sdk-common-lisp:3.1-sbcl-2.2.5-nanoserver-20H2
   * love5an/dotnet-core-sdk-common-lisp:5.0-sbcl-2.2.5-nanoserver-20H2
   * love5an/dotnet-core-sdk-common-lisp:5.0-sbcl-2.3.8-nanoserver-20H2
-  * love5an/dotnet-core-sdk-common-lisp:5.0-sbcl-latest-nanoserver-20H2
+  * love5an/dotnet-core-sdk-common-lisp:6.0-sbcl-2.3.8-nanoserver-ltsc2022
+  * love5an/dotnet-core-sdk-common-lisp:6.0-sbcl-latest-nanoserver-ltsc2022
+  * love5an/dotnet-core-sdk-common-lisp:7.0-sbcl-2.3.8-nanoserver-ltsc2022
+  * love5an/dotnet-core-sdk-common-lisp:7.0-sbcl-latest-nanoserver-ltsc2022
 
 ### Linux
 
@@ -33,7 +36,10 @@ All the images are publicly available on [Docker Hub](https://cloud.docker.com/u
   * love5an/dotnet-core-sdk-common-lisp:3.1-sbcl-2.2.5-focal
   * love5an/dotnet-core-sdk-common-lisp:5.0-sbcl-2.2.5-focal
   * love5an/dotnet-core-sdk-common-lisp:5.0-sbcl-2.3.8-focal
-  * love5an/dotnet-core-sdk-common-lisp:5.0-sbcl-latest-focal
+  * love5an/dotnet-core-sdk-common-lisp:6.0-sbcl-2.3.8-jammy
+  * love5an/dotnet-core-sdk-common-lisp:6.0-sbcl-latest-jammy
+  * love5an/dotnet-core-sdk-common-lisp:7.0-sbcl-2.3.8-jammy
+  * love5an/dotnet-core-sdk-common-lisp:7.0-sbcl-latest-jammy
 
 #### CCL
   * love5an/dotnet-core-sdk-common-lisp:2.2-ccl-1.11.5-stretch
@@ -42,5 +48,8 @@ All the images are publicly available on [Docker Hub](https://cloud.docker.com/u
   * love5an/dotnet-core-sdk-common-lisp:3.1-ccl-1.11.8-bionic
   * love5an/dotnet-core-sdk-common-lisp:3.1-ccl-1.12.1-focal
   * love5an/dotnet-core-sdk-common-lisp:5.0-ccl-1.12.1-focal
-  * love5an/dotnet-core-sdk-common-lisp:5.0-ccl-latest-focal
+  * love5an/dotnet-core-sdk-common-lisp:6.0-ccl-1.12.1-jammy
+  * love5an/dotnet-core-sdk-common-lisp:6.0-ccl-latest-jammy
+  * love5an/dotnet-core-sdk-common-lisp:7.0-ccl-1.12.1-jammy
+  * love5an/dotnet-core-sdk-common-lisp:7.0-ccl-latest-jammy
 
