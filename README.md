@@ -20,6 +20,7 @@ All the images are publicly available on [Docker Hub](https://cloud.docker.com/u
   * love5an/dotnet-core-sdk-common-lisp:6.0-sbcl-2.3.8-jammy
   * love5an/dotnet-core-sdk-common-lisp:7.0-sbcl-2.3.8-jammy
   * love5an/dotnet-core-sdk-common-lisp:8.0-sbcl-2.3.10-jammy
+  * love5an/dotnet-core-sdk-common-lisp:8.0-sbcl-2.4.2-jammy
   * love5an/dotnet-core-sdk-common-lisp:8.0-sbcl-latest-jammy
 
 #### CCL
